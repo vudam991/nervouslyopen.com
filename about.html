@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vu Dam | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #eef2f7;
+      --muted: #aab4c3;
+      --accent: #7cc6ff;
+      --border: #2a3140;
+      --max: 900px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #0d1016 0%, #121722 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    header {
+      padding: 32px 0 12px;
+    }
+    h1, h2, h3 {
+      line-height: 1.15;
+      margin: 0 0 14px;
+    }
+    h1 { font-size: 2.8rem; }
+    h2 {
+      margin-top: 42px;
+      font-size: 1.6rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+    p { color: var(--text); margin: 0 0 16px; }
+    .lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 720px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.02);
+    }
+    .btn.primary {
+      background: var(--accent);
+      color: #08111b;
+      border-color: var(--accent);
+      font-weight: 700;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      margin: 18px 0;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; color: var(--muted); }
+    a { color: var(--accent); }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 760px) {
+      .grid.two { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Vu Dam</h1>
+      <p class="lead">Software developer focused on practical apps, simple design, and real shipped projects.</p>
+      <p>I build simple, useful software and mobile apps. I recently designed and published <strong>SleepySheepie</strong>, an iOS bedtime companion available on the App Store.</p>
+      <div class="links">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="#resume">Resume</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>Hi, I’m Vu Dam.</p>
+        <p>I like building software that feels calm, practical, and easy to use. I learn best by creating real projects and improving them step by step.</p>
+        <p>Recently, I published SleepySheepie on the App Store. Through that project, I gained hands-on experience with app development, localization, App Store submission, metadata, privacy and support pages, and release updates.</p>
+        <p>I’m looking for opportunities where I can keep growing in software development, IT, and product-oriented technical work.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>SleepySheepie</h3>
+          <p>A calm bedtime companion for iPhone designed to help users wind down with a simple and soothing experience.</p>
+          <p><strong>What I worked on</strong></p>
+          <ul>
+            <li>Built and shipped the app to the App Store</li>
+            <li>Managed App Store Connect setup and release updates</li>
+            <li>Worked on localization, including Vietnamese support</li>
+            <li>Updated support, privacy, and product page information</li>
+            <li>Improved the app’s presentation and release readiness</li>
+          </ul>
+          <p class="muted">Replace these links with your real URLs:</p>
+          <p>
+            <a href="#">App Store</a> ·
+            <a href="#">GitHub</a> ·
+            <a href="#">Project Page</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Personal Website</h3>
+          <p>My portfolio and resume site hosted on my permanent domain.</p>
+          <p><strong>What I worked on</strong></p>
+          <ul>
+            <li>Structured the site to present my work clearly</li>
+            <li>Added project pages, background information, and resume content</li>
+            <li>Used the site as a central place for GitHub, app, and contact links</li>
+          </ul>
+          <p>
+            <a href="https://github.com/vudam991/nervouslyopen.com" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Summary</h3>
+          <p>Entry-level software and IT candidate with hands-on experience building and publishing a live iOS app, managing release updates, and maintaining project websites and documentation.</p>
+        </div>
+        <div class="card">
+          <h3>Current Focus</h3>
+          <ul>
+            <li>Growing as a software developer through real shipped projects</li>
+            <li>Building practical tools and user-friendly applications</li>
+            <li>Exploring opportunities in software, IT, and junior engineering roles</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Skills</h3>
+        <ul>
+          <li>iOS app publishing</li>
+          <li>App Store Connect</li>
+          <li>Git and GitHub</li>
+          <li>Localization and release updates</li>
+          <li>Static websites</li>
+          <li>Technical documentation</li>
+          <li>Troubleshooting and iterative development</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Featured Project</h3>
+        <p><strong>SleepySheepie</strong> — Built and published an iOS app to the App Store. Managed app updates, metadata, localization work, and support/privacy pages.</p>
+        <p><a href="#">Download Resume PDF</a></p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>The best way to reach me is by email.</p>
+        <ul>
+          <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+          <li>GitHub: <a href="https://github.com/vudam991" target="_blank" rel="noopener noreferrer">github.com/vudam991</a></li>
+          <li>LinkedIn: <a href="#">Add LinkedIn link</a></li>
+          <li>Website: <a href="#">Add website link</a></li>
+          <li>App Store: <a href="#">Add SleepySheepie link</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
